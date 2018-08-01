@@ -1,0 +1,276 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .wrap {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FBFBFB;
+    }
+    /* 主体部分 */
+    
+    #content-wp {
+        padding: 0 20px;
+        width: 100%;
+    }
+    
+    #userTop {
+        padding: 20px 0;
+    }
+    
+    #userTop .userimg {
+        float: left;
+        width: 60%;
+    }
+    
+    #userTop .usercart {
+        position: relative;
+        float: right;
+    }
+    
+    #userTop .usercart .cartnum {
+        position: absolute;
+        top: -5px;
+        right: 5px;
+        display: block;
+        padding: 2px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        text-align: center;
+        background: #FF4D00;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    #userTop .usericon {
+        border-radius: 50%;
+        width: 25%;
+    }
+    
+    #userTop .usercarticon {
+        width: 70%;
+    }
+    /* 搜索 */
+    
+    #searchwp {
+        padding-left: 5%;
+        margin-bottom: 40px;
+        background: #fff;
+        border-radius: 5px;
+    }
+    
+    #searchwp input {
+        width: 85%;
+        height: 50px;
+        vertical-align: middle;
+        outline: none;
+        border: none;
+        font-size: 20px;
+    }
+    
+    #searchwp input::-webkit-input-placeholder {
+        color: #C0C0C0;
+        font-size: 20px;
+    }
+    
+    #searchwp input:-moz-placeholder {
+        color: #C0C0C0;
+        font-size: 20px;
+    }
+    
+    #searchwp input:-ms-input-placeholder {
+        color: #C0C0C0;
+        font-size: 20px;
+    }
+    
+    #searchwp span {
+        width: 7%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    #searchwp .searchicon {
+        width: 100%;
+    }
+    
+    #title {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    #title span {
+        display: table-cell;
+        float: left;
+        font-size: 2rem;
+        vertical-align: middle;
+    }
+    
+    #title span:nth-child(1) {
+        width: 44%;
+        height: 32px;
+    }
+    
+    #title span:nth-child(2) {
+        width: 28%;
+        margin-top: 8px;
+        color: #E0E0E0;
+    }
+    
+    #title span:nth-child(3) {
+        width: 28%;
+        margin-top: 8px;
+        color: #E0E0E0;
+    }
+    
+    #title .active {
+        font-size: 2.7rem;
+        font-weight: bolder;
+    }
+    
+    .whiteshow {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 56%;
+        background: linear-gradient(to right, rgba(252, 247, 247, 0) 0%, rgba(252, 250, 249, 1) 100%);
+    }
+    /* 商品列表 */
+    
+    #goodslist {
+        position: relative;
+        margin-right: -20px;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+    
+    .goodswp {
+        position: absolute;
+        float: left;
+        padding: 15px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        /* width: 160px; */
+        border-radius: 5px;
+        background: #fff;
+        -moz-box-shadow: 0px 9px 20px #C9C9C9;
+        -webkit-box-shadow: 0px 9px 20px #C9C9C9;
+        box-shadow: 0px 9px 20px #C9C9C9;
+        transition: all 1s;
+    }
+    
+    .goodswp img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .goodswp h2,
+    .goodswp p {
+        text-align: center;
+    }
+    
+    .goodswp h2 {
+        line-height: 35px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    .goodswp p {
+        line-height: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /* 底部菜单 */
+    
+    #menulist {
+        position: fixed;
+        margin: 0 auto;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #fff;
+    }
+    
+    #menulist ul {
+        padding: 20px 0;
+        list-style: none;
+    }
+    
+    #menulist ul li {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+    
+    #menulist .menuicon {
+        width: 35%;
+    }
+    
+    @media screen and (min-width: 850px) {
+        .wrap,
+        #menulist {
+            width: 750px;
+        }
+    }
+    
+    @media screen and (min-width: 300px) {
+        .goodswp {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (min-width: 350px) {
+        .goodswp {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (min-width: 350px) {
+        .goodswp {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (min-width: 400px) {
+        .goodswp {
+            width: 47%;
+        }
+    }
+    
+    @media screen and (min-width: 550px) {
+        .goodswp {
+            width: 40%;
+        }
+    }
+    
+    @media screen and (min-width: 750px) {
+        .goodswp {
+            width: 30%;
+        }
+    }
+    
+    @media screen and (min-width: 950px) {
+        .goodswp {
+            width: 20%;
+        }
+    }
